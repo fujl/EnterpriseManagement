@@ -1,0 +1,6 @@
+framework module AppManager {
+  umbrella header "AppManager.h"
+
+  export *
+  module * { export * }
+}
