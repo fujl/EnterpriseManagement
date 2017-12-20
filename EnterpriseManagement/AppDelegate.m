@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "IQKeyboardManager.h"
 #import "EMManager.h"
+#import "EMLaunchViewController.h"
+#import "EMLoginViewController.h"
 
 @interface AppDelegate () <UIApplicationManagerDelegate>
 
@@ -24,6 +26,33 @@
     
     [[UIApplication sharedApplication] addManagersDelegate:self];
     [[UIApplication sharedApplication] setupManager];
+    
+    DMUserManager *userManager = getManager(DMUserManager);
+    // 初始化程序Window
+    UIViewController *rootController;
+    if (userManager.isNeedLogin) {
+        // 登录
+        rootController = [[EMLoginViewController alloc] init];
+    } else {
+        rootController = [[EMLaunchViewController alloc] init];
+        [userManager autoLogin:^(DMResultCode code) {
+            if (code == ResultCodeOK) {
+                [userManager startMainController];
+            } else {
+                [userManager startLoginController];
+            }
+        }];
+    }
+    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.rootViewController = rootController;
+    [window makeKeyAndVisible];
+    window.backgroundColor = [UIColor appBackground];
+    
+    self.window = window;
+    
+    // 通知 程序的界面创建完成
+    [[UIApplication sharedApplication] windowCreated];
     return YES;
 }
 

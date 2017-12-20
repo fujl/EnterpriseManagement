@@ -1,0 +1,222 @@
+/* 
+  Localizable.strings
+  EnterpriseManagement
+
+  Created by fujl-mac on 2017/12/20.
+  Copyright © 2017年 fujl. All rights reserved.
+*/
+
+/*
+ Localizable.strings
+ DisciplineManager
+ 
+ Created by fujl-mac on 2017/6/9.
+ Copyright © 2017年 fujl-mac. All rights reserved.
+ */
+
+"app_name" = "智慧行政";
+"goback" = "返回";
+"hint" = "提示";
+"sure" = "确定";
+"Cancel" = "取消";
+"company_name" = "兴义市石头科技有限公司";
+"copyright" = "Copyright© 2016-2017 www.gzstkj.cn";
+"morning" = "上午";
+"afternoon" = "下午";
+
+"Detail" = "详情";
+
+"user_name_tip" = "请输入用户名";
+"password_tip" = "请输入密码";
+"login_user" = "登录";
+
+"Todo" = "待办任务";
+"Out" = "外出";
+"ApplyOut" = "外出申请";
+"ApplyBus" = "公车申请";
+"ApplyCompensatory" = "补休申请";
+"ApplyLeave" = "请假申请";
+"AddressBook" = "通讯录";
+"More" = "更多";
+
+"Apply" = "申请";
+"FillinApplyOut" = "填写外出申请单";
+"OutTime" = "外出时间";
+"OutTimePlaceholder" = "必选，请选择外出时间";
+"ReturnTime" = "回岗时间";
+"ReturnTimePlaceholder" = "必选，请选择回岗时间";
+"OutReason" = "外出事由";
+"Commit" = "提交";
+"OutReasonPlaceholder" = "必填，请输入外出事由";
+"Save" = "保存";
+"Pending" = "待审核";
+"Complete" = "已完成";
+"Rejected" = "驳回";
+"DataError" = "错误数据";
+"Agree" = "同意";
+"CompleteOnGuard" = "完成回岗";
+"TransferComment" = "转批";
+"IsNeedBus" = "是否需要公车";
+
+"FillinApplyBus" = "填写公车申请单";
+"OutAddress" = "外出地址";
+"OutAddressPlaceholder" = "必选，请选择外出地址";
+"OutDetailAddress" = "外出详细地址";
+"DetailAddressPlaceholder" = "必填，请输入详细地址";
+"Close" = "关闭";
+"Complete" = "完成";
+
+"FillinApplyCompensatory" = "填写补休申请单";
+"StartOvertime" = "加班开始时间";
+"StartOvertimePlaceholder" = "必选，请选择加班开始时间";
+"EndOvertime" = "加班结束时间";
+"EndOvertimePlaceholder" = "必选，请选择加班结束时间";
+"OvertimeReason" = "加班事由";
+"OvertimeReasonPlaceholder" = "必填，请输入加班事由";
+
+"FillinApplyLeave" = "填写请(休)假申请单";
+"LeaveType" = "请(休)假类别";
+"LeaveTypePlaceholder" = "必选，当选择请假时，无需选择休假票";
+"StartTime" = "开始时间";
+"StartTimePlaceholder" = "必选，请选择开始时间";
+"EndTime" = "结束时间";
+"EndTimePlaceholder" = "必选，请选择结束时间";
+"ActualLeaveNumber" = "实际请(休)假天数";
+"ActualLeaveNumberPlaceholder" = "请假天数由系统计算完成，此天数不包含节假日";
+"Holidays" = "节假日";
+"HolidaysPlaceholder" = "系统计算的节假日天数";
+"LeaveTicketNumber" = "请(休)假票天数";
+"LeaveTicketNumberPlaceholder" = "必选，请选择休假票";
+"LeaveReason" = "请(休)假事由";
+"LeaveReasonPlaceholder" = "必填，请输入请(休)假事由";
+"Leave" = "请假";
+"Vacation" = "休假";
+"VacationSureHint" = "您所选择的休假票天数大于请假天数，是否确定使用？";
+
+"call_phone_number" = "呼叫%@";
+"call_phone" = "呼叫";
+"all_department" = "所有部门";
+"contacts" = "联系人";
+"OnGuard" = "在岗";
+"CozyHint" = "温馨提示";
+"MyLeaveTicket" = "我的休假票";
+"Ratified" = "已批准";
+"PersonalAvatar" = "个人头像";
+"Avatar" = "头像";
+"Modify" = "修改";
+"ModifyPassword" = "修改密码";
+"OriginalPassword" = "原密码";
+"SurePassword" = "确认密码";
+"NewPassword" = "新密码";
+"Logout" = "注销";
+"DetailInfo" = "详细信息";
+"TaskTrack" = "任务跟踪";
+
+"news" = "简讯";
+"AddressList" = "通讯";
+"home" = "政";
+"mine" = "我的";
+"vote" = "投票";
+
+"temporary_task" = "督办任务";
+"exhibition" = "工作展晒";
+"FillinExhibition" = "填写工作展晒";
+"repast" = "就餐管理";
+"notice" = "通知公告";
+"Publish" = "发布";
+"mood" = "这一刻的心情";
+"mood_placeholder" = "请输入您此刻的心情";
+
+"TakePhoto" = "拍照";
+"ChooseFromGallery" = "从相册选择";
+// 多图
+"Photo" = "照片";
+"photo_authorized" = "请在iPhone的\"设置-隐私-照片\"中允许访问照片。";
+"OK" = "确定";
+"album_nodata_tipone" = "当前没有照片";
+"album_nodata_tiptwo" = "使用相机拍摄";
+"Preview" = "预览";
+"Completed" = "完成";
+"photo_maxnumber" = "您最多只能选择%ld张照片";
+"ISee" = "我知道了";
+
+"cancel" = "取消";
+
+"vote_theme_placeholder" = "请输入投票主题，8-20字";
+"max_tip_publish_vote" = "最多支持%zd个选项，每个选项不超过%zd个字";
+"vote_item_placeholder" = "选项%zd";
+"add_item" = "添加选项";
+"vote_type" = "投票类型";
+"radio" = "单选";
+"checkbox" = "多选";
+"vote_item_check" = "选项不允许为空，且不得超过40个字";
+"vote_end_time_check" = "投票结束时间不得小于当前时间";
+"unkown_error" = "未知错误";
+"under_way" = "进行中";
+"has_ended" = "已结束";
+"immediate_voting" = "立即投票";
+"voted_view_results" = "已投票，查看结果";
+"not_voting_view_results" = "未投票，查看结果";
+"total_ticket" = "共%zd票";
+"CutoffTime" = "截止时间";
+"number_ticket" = "%zd票";
+"vote_option_empty" = "请选择投票项";
+
+"Sunday" = "星期日";
+"Monday" = "星期一";
+"Tuesday" = "星期二";
+"Wednesday" = "星期三";
+"Thursday" = "星期四";
+"Friday" = "星期五";
+"Saturday" = "星期六";
+
+"number_diners_format" = "%@ %@ 就餐人数";
+"breakfast" = "早餐";
+"lunch" = "午餐";
+"sign_time_title" = "剩余打卡时间";
+"dining_punch_obsolete" = "就餐打卡已结束";
+"dining_punch" = "需要就餐";
+"dishes_paoma" = "请认真选择明天需要的菜品, 有助于我们购买食材, 杜绝浪费";
+"dish_chart" = "分布图";
+"breakfast_dish_empty" = "请选择早餐菜";
+"lunch_dish_empty" = "请选择午餐菜";
+"dish_vote" = "菜品投票";
+"signed_vote" = "您已确认需要就餐";
+
+"publish_notice" = "发布通知";
+"Notice_Header_Tip" = "温馨提示：接收人不选择默认发送全部";
+"receiver" = "接收人";
+"Select_User" = "选择用户";
+"NoticeTitle" = "通知标题";
+"NoticeTitlePlaceholder" = "必填，请输入通知标题";
+"NoticeContent" = "通知内容";
+"NoticeContentPlaceholder" = "必填，请输入通知内容";
+"unread" = "未读";
+"read" = "已读";
+
+"need" = "需要";
+"no_need" = "不需要";
+
+"LeaveImgTip" = "温馨提示:图片附件最多允许9张";
+"PictureAccessories" = "图片附件";
+
+"FillinSupervise" = "填写督办任务单";
+"Deadline" = "截止日期";
+"DeadlinePlaceholder" = "必选，请选择截止时间";
+"transactor" = "任务办理人";
+"transactor_placeholder" = "请选择任务办理人(必选)";
+"co_organizer" = "协办人员";
+"co_organizer_placeholder" = "请选择协办人员(可选,多选)";
+"TaskContent" = "任务内容";
+"TaskContentPlaceholder" = "必填，请输入任务内容";
+"transfer_dealer" = "转批办理人";
+"transfer_dealer_placeholder" = "请选择转批办理人(转批时必选)";
+"add_co_organizer" = "新增协办人员";
+"Timeout" = "超时";
+
+"finish_task" = "完成任务";
+"Turn_to_do" = "转办";
+"gongxiu_ticket" = "公休假票";
+"buxiu_ticket" = "补休假票";
+"initiate" = "发起";
+"IsNeedAutoDriver" = "自派驾驶员";

@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    AMNetworkManager *manager = getManager([AMNetworkManager class]);
+    DMNetworkManager *manager = getManager([DMNetworkManager class]);
     BOOL hasNet = [manager hasNet];
     NSLog(@"hasNet %d", hasNet);
 }
