@@ -17,6 +17,13 @@
 		DF423DD81FE37459001F795B /* EnterpriseManagementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF423DD71FE37459001F795B /* EnterpriseManagementTests.m */; };
 		DF423DE31FE37459001F795B /* EnterpriseManagementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF423DE21FE37459001F795B /* EnterpriseManagementUITests.m */; };
 		DF9B3A8F1FE8FC64006CE0D8 /* AppManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9B3A891FE8F436006CE0D8 /* AppManager.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DF9B3AA31FE91E91006CE0D8 /* EMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B3AA21FE91E91006CE0D8 /* EMBaseViewController.m */; };
+		DFCEFB951FE9F390005E2C13 /* EMHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFB941FE9F390005E2C13 /* EMHttpManager.m */; };
+		DFCEFB991FE9F447005E2C13 /* EMHttpRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFB981FE9F447005E2C13 /* EMHttpRequester.m */; };
+		DFCEFBB81FE9FD9B005E2C13 /* EMConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBB71FE9FD9B005E2C13 /* EMConfig.m */; };
+		DFCEFBBB1FE9FEAD005E2C13 /* EMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBBA1FE9FEAD005E2C13 /* EMManager.m */; };
+		DFCEFBBF1FE9FF6B005E2C13 /* EMUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBBE1FE9FF6B005E2C13 /* EMUserManager.m */; };
+		DFCEFBC21FEA002C005E2C13 /* EMLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCEFBC11FEA002C005E2C13 /* EMLoginInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,21 @@
 		DF423DE41FE37459001F795B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF9B3A7F1FE8F03D006CE0D8 /* AppFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppFramework.framework; path = EnterpriseManagement/lib/AppFramework.framework; sourceTree = "<group>"; };
 		DF9B3A891FE8F436006CE0D8 /* AppManager.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppManager.framework; path = EnterpriseManagement/lib/AppManager.framework; sourceTree = "<group>"; };
+		DF9B3A991FE919EF006CE0D8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DF9B3AA11FE91E91006CE0D8 /* EMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMBaseViewController.h; sourceTree = "<group>"; };
+		DF9B3AA21FE91E91006CE0D8 /* EMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMBaseViewController.m; sourceTree = "<group>"; };
+		DFCEFB931FE9F390005E2C13 /* EMHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMHttpManager.h; sourceTree = "<group>"; };
+		DFCEFB941FE9F390005E2C13 /* EMHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMHttpManager.m; sourceTree = "<group>"; };
+		DFCEFB971FE9F447005E2C13 /* EMHttpRequester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMHttpRequester.h; sourceTree = "<group>"; };
+		DFCEFB981FE9F447005E2C13 /* EMHttpRequester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMHttpRequester.m; sourceTree = "<group>"; };
+		DFCEFBB61FE9FD9B005E2C13 /* EMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMConfig.h; sourceTree = "<group>"; };
+		DFCEFBB71FE9FD9B005E2C13 /* EMConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMConfig.m; sourceTree = "<group>"; };
+		DFCEFBB91FE9FEAD005E2C13 /* EMManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMManager.h; sourceTree = "<group>"; };
+		DFCEFBBA1FE9FEAD005E2C13 /* EMManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMManager.m; sourceTree = "<group>"; };
+		DFCEFBBD1FE9FF6B005E2C13 /* EMUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMUserManager.h; sourceTree = "<group>"; };
+		DFCEFBBE1FE9FF6B005E2C13 /* EMUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMUserManager.m; sourceTree = "<group>"; };
+		DFCEFBC01FEA002C005E2C13 /* EMLoginInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMLoginInfo.h; sourceTree = "<group>"; };
+		DFCEFBC11FEA002C005E2C13 /* EMLoginInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMLoginInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +155,9 @@
 		DF423DBA1FE37459001F795B /* EnterpriseManagement */ = {
 			isa = PBXGroup;
 			children = (
+				DF9B3A9A1FE91D79006CE0D8 /* Manager */,
+				DF9B3A9B1FE91D79006CE0D8 /* UI */,
+				DF9B3A9C1FE91D79006CE0D8 /* Utils */,
 				DF423DBB1FE37459001F795B /* AppDelegate.h */,
 				DF423DBC1FE37459001F795B /* AppDelegate.m */,
 				DF423DBE1FE37459001F795B /* ViewController.h */,
@@ -142,6 +167,9 @@
 				DF423DCC1FE37459001F795B /* Info.plist */,
 				DF423DCD1FE37459001F795B /* main.m */,
 				DF423DC41FE37459001F795B /* EnterpriseManagement.xcdatamodeld */,
+				DF9B3A991FE919EF006CE0D8 /* PrefixHeader.pch */,
+				DFCEFBB61FE9FD9B005E2C13 /* EMConfig.h */,
+				DFCEFBB71FE9FD9B005E2C13 /* EMConfig.m */,
 			);
 			path = EnterpriseManagement;
 			sourceTree = "<group>";
@@ -162,6 +190,63 @@
 				DF423DE41FE37459001F795B /* Info.plist */,
 			);
 			path = EnterpriseManagementUITests;
+			sourceTree = "<group>";
+		};
+		DF9B3A9A1FE91D79006CE0D8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEFBBC1FE9FF53005E2C13 /* User */,
+				DFCEFB921FE9F35B005E2C13 /* Http */,
+				DFCEFBB91FE9FEAD005E2C13 /* EMManager.h */,
+				DFCEFBBA1FE9FEAD005E2C13 /* EMManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		DF9B3A9B1FE91D79006CE0D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B3A9D1FE91E23006CE0D8 /* Base */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DF9B3A9C1FE91D79006CE0D8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DF9B3A9D1FE91E23006CE0D8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B3AA11FE91E91006CE0D8 /* EMBaseViewController.h */,
+				DF9B3AA21FE91E91006CE0D8 /* EMBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DFCEFB921FE9F35B005E2C13 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEFB931FE9F390005E2C13 /* EMHttpManager.h */,
+				DFCEFB941FE9F390005E2C13 /* EMHttpManager.m */,
+				DFCEFB971FE9F447005E2C13 /* EMHttpRequester.h */,
+				DFCEFB981FE9F447005E2C13 /* EMHttpRequester.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		DFCEFBBC1FE9FF53005E2C13 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DFCEFBBD1FE9FF6B005E2C13 /* EMUserManager.h */,
+				DFCEFBBE1FE9FF6B005E2C13 /* EMUserManager.m */,
+				DFCEFBC01FEA002C005E2C13 /* EMLoginInfo.h */,
+				DFCEFBC11FEA002C005E2C13 /* EMLoginInfo.m */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +314,9 @@
 		DF423DB01FE37459001F795B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EM;
 				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = "fujl-mac";
+				ORGANIZATIONNAME = fujl;
 				TargetAttributes = {
 					DF423DB71FE37459001F795B = {
 						CreatedOnToolsVersion = 9.1;
@@ -379,8 +465,15 @@
 			files = (
 				DF423DC61FE37459001F795B /* EnterpriseManagement.xcdatamodeld in Sources */,
 				DF423DC01FE37459001F795B /* ViewController.m in Sources */,
+				DFCEFBBF1FE9FF6B005E2C13 /* EMUserManager.m in Sources */,
+				DF9B3AA31FE91E91006CE0D8 /* EMBaseViewController.m in Sources */,
+				DFCEFB991FE9F447005E2C13 /* EMHttpRequester.m in Sources */,
+				DFCEFBC21FEA002C005E2C13 /* EMLoginInfo.m in Sources */,
+				DFCEFB951FE9F390005E2C13 /* EMHttpManager.m in Sources */,
+				DFCEFBB81FE9FD9B005E2C13 /* EMConfig.m in Sources */,
 				DF423DCE1FE37459001F795B /* main.m in Sources */,
 				DF423DBD1FE37459001F795B /* AppDelegate.m in Sources */,
+				DFCEFBBB1FE9FEAD005E2C13 /* EMManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +636,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/EnterpriseManagement/lib",
 				);
+				GCC_PREFIX_HEADER = EnterpriseManagement/PrefixHeader.pch;
 				INFOPLIST_FILE = EnterpriseManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -599,6 +693,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/EnterpriseManagement/lib",
 				);
+				GCC_PREFIX_HEADER = EnterpriseManagement/PrefixHeader.pch;
 				INFOPLIST_FILE = EnterpriseManagement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

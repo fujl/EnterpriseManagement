@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <AppManager/AppManager.h>
+#import "IQKeyboardManager.h"
+#import "EMManager.h"
 
 @interface AppDelegate () <UIApplicationManagerDelegate>
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [IQKeyboardManager sharedManager].enable = YES;
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = 80;
+    
     [[UIApplication sharedApplication] addManagersDelegate:self];
     [[UIApplication sharedApplication] setupManager];
     return YES;
@@ -99,5 +104,6 @@
 #pragma mark - UIApplicationManagerDelegate
 - (void)registerManager:(NSMutableArray<Class> *)managers {
     NSLog(@"registerManager");
+    [EMManager registerManager:managers];
 }
 @end
