@@ -33,6 +33,7 @@
 
 #import "DMNoticeViewController.h"
 #import "DMSuperviseViewController.h"
+#import "UIButton+WebCache.h"
 
 @interface DMHomeViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIView *titleView;
@@ -92,13 +93,6 @@
     [self.view addSubview:self.titleView];
     [self.view addSubview:self.tableView];
     self.tableView.tableHeaderView = self.headView;
-    //    [self.view addSubview:self.logoView];
-    //
-    //    [self.logoView mas_makeConstraints:^(MASConstraintMaker *make) {
-    //        make.left.right.equalTo(self.view);
-    //        make.top.equalTo(self.view);
-    //        make.height.equalTo(@(SCREEN_WIDTH*0.618));
-    //    }];
     
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.titleView.mas_bottom);
@@ -117,14 +111,14 @@
     if (!_titleView) {
         _titleView = [[UIView alloc] init];
         _titleView.backgroundColor = [UIColor colorWithRGB:0xd9534f];
+        UIImageView *bgView = [[UIImageView alloc] init];
+        NSArray *clrs = @[[UIColor colorWithRGB:0x398af0], [UIColor colorWithRGB:0x6fe1fc]];
         if (IPHONEX) {
             _titleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 64+34);
-//            _headView.lcHeight = 64+34;
-//            _headView.lcTopMargin = -54;
+            bgView.image = [UIImage gradientImageFromColors:clrs size:CGSizeMake(SCREEN_WIDTH, 64+34)];
         } else {
             _titleView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 64);
-//            _headView.lcHeight = 64;
-//            _headView.lcTopMargin = -20;
+            bgView.image = [UIImage gradientImageFromColors:clrs size:CGSizeMake(SCREEN_WIDTH, 64)];
         }
         
         UILabel *titleLabel = [[UILabel alloc] init];
@@ -132,14 +126,27 @@
         titleLabel.textColor = [UIColor whiteColor];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.font = [UIFont boldSystemFontOfSize:17];
+        UIButton *msgBtn = [[UIButton alloc] init];
+        msgBtn.backgroundColor = [UIColor clearColor];
+        [msgBtn sd_setImageWithURL:[NSURL URLWithString:@"http://img.ui.cn/data/file/7/8/5/1480587.png?imageMogr2/auto-orient/format/jpg/strip/thumbnail/!1800%3E/quality/90/"] forState:UIControlStateNormal];
+        [_titleView addSubview:bgView];
         [_titleView addSubview:titleLabel];
+        [_titleView addSubview:msgBtn];
+        [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(_titleView);
+        }];
         [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(_titleView);
+            make.left.equalTo(_titleView).offset(30);
             if (IPHONEX) {
                 make.centerY.equalTo(_titleView).offset(20);
             } else {
                 make.centerY.equalTo(_titleView).offset(10);
             }
+        }];
+        [msgBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.equalTo(titleLabel);
+            make.right.equalTo(bgView.mas_right).offset(-30);
+            make.size.mas_equalTo(CGSizeMake(40, 30));
         }];
     }
     return _titleView;
